@@ -33,10 +33,11 @@ jobs:
         uses: helm/chart-releaser-action@v1.5.0
         with:
           charts_dir: charts
+          config: cr.yaml
         env:
           CR_TOKEN: "${{ secrets.HELM_RELEASE_TOKEN }}"
           CR_SKIP_EXISTING: "true"
 
       - name: list files
         run: |
-          ls -larth
+          tree
