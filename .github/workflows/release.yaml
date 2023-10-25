@@ -40,4 +40,4 @@ jobs:
 
       - name: list files
         run: |
-          tree
+          tree -a
