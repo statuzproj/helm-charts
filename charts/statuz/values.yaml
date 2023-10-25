@@ -1,3 +1,1 @@
-serviceAccount:
-  create: true
-  name: "test"
+name: "test"
