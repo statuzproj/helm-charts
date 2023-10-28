@@ -4,4 +4,4 @@ metadata:
   name: watchpoints
 data:
   endpoints.yaml: |-
-{{ .Values.endpoints | toYaml | nindent 2 }}
+{{ toYaml .Values.endpoints | nindent 2 }}
