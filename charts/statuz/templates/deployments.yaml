@@ -1,10 +1,9 @@
-apiVersion : apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: genie
   labels:
     app: genie
-
 spec:
   selector:
     matchLabels:
@@ -13,7 +12,6 @@ spec:
     metadata:
       labels:
         app: genie
-
     spec:
       containers:
         - name: genie
@@ -24,18 +22,14 @@ spec:
               memory: "256Mi"
               cpu: "250m"
             limits:
-                memory: "512Mi"
-                cpu: "500m"
+              memory: "512Mi"
+              cpu: "500m"
           ports:
             - containerPort: 8080
           volumeMounts:
             - mountPath: /etc/config
-              name: watchpoints
+              name: watchpoints-vol
       volumes:
         - name: watchpoints-vol
           configMap:
             name: watchpoints
-
-
-
-
