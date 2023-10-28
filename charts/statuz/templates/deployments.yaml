@@ -1,0 +1,41 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: genie
+  labels:
+    app: genie
+
+spec:
+  selector:
+    matchLabels:
+      app: genie
+  template:
+    metadata:
+      labels:
+        app: genie
+
+    spec:
+      containers:
+        - name: genie
+          image: quay.io/statuz/genie:main
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+                memory: "512Mi"
+                cpu: "500m"
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - mountPath: /etc/config
+              name: watchpoints
+      volumes:
+        - name: watchpoints-vol
+          configMap:
+            name: watchpoints
+
+
+
+

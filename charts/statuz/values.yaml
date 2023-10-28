@@ -1,1 +1,6 @@
-name: "test"
+endpoints.yaml: |
+  - name: google_bd
+    target:
+      type: webpage
+      endpoint: https://www.google.com.bd/
+      interval: 15

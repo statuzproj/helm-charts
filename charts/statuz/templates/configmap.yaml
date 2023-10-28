@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: watchpoints
+
+data:
+  endpoints.yaml: "{{ .Values.endpoints.yaml | quote }}"
