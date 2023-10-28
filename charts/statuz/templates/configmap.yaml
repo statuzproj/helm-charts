@@ -5,6 +5,4 @@ metadata:
 
 data:
   endpoints.yaml: |-
-  {{ .Values.endpoints.yaml | nindent 2 }}
-
-
+  {{ .Values.endpoints | toYaml | nindent 2 }}
