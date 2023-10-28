@@ -1,6 +1,1 @@
 endpoints:
-  - name: google_bd
-    target:
-      type: webpage
-      endpoint: https://www.google.com.bd/
-      interval: 15
