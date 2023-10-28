@@ -1,4 +1,4 @@
-endpoints: |
+endpoints.yaml: |
   - name: google_bd
     target:
       type: webpage

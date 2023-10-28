@@ -4,4 +4,6 @@ metadata:
   name: watchpoints
 
 data:
-  endpoints.yaml: "{{ .Values.endpoints }}"
+  endpoints.yaml: |
+      {{ .Values.endpoints.yaml | nindent 4 }}
+
