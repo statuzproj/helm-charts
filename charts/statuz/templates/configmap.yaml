@@ -4,4 +4,4 @@ metadata:
   name: watchpoints
 
 data:
-  endpoints.yaml: "{{ .Values.endpoints.yaml | quote }}"
+  endpoints.yaml: "{{ .Values.endpoints }}"
