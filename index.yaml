@@ -201,15 +201,4 @@ entries:
     urls:
     - https://statuzproj.github.io/helm-charts/statuz-0.1.1.tgz
     version: 0.1.1
-  test:
-  - apiVersion: v2
-    appVersion: 1.16.1
-    created: "2023-10-26T06:01:50.103235318Z"
-    description: A Helm chart for Kubernetes
-    digest: 47ffaf8e7e6b0792dadf583bafa0618a44cf91ac0f8c7ddae07742eba7349a64
-    name: test
-    type: application
-    urls:
-    - https://github.com/statuzproj/helm-charts/releases/download/test-0.1.1/test-0.1.1.tgz
-    version: 0.1.1
 generated: "2023-10-28T19:28:14.967041919Z"
