@@ -4,4 +4,10 @@ metadata:
   name: watchpoints
 data:
   endpoints.yaml: |-
-{{ toYaml .Values.endpoints | nindent 2 }}
+{{- range .Values.endpoints }}
+    - name: {{ .name }}
+      target:
+        type: {{ .target.type }}
+        endpoint: {{ .target.endpoint }}
+        interval: {{ .target.interval }}
+{{- end }}
