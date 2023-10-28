@@ -3,6 +3,16 @@ entries:
   statuz:
   - apiVersion: v2
     appVersion: 1.2.1
+    created: "2023-10-28T18:42:19.651835465Z"
+    description: A Helm chart for Kubernetes
+    digest: 93e321a2eb58ea5536c2155ead26a04d2064ca6a7b7138f1062e69497afb4100
+    name: statuz
+    type: application
+    urls:
+    - https://github.com/statuzproj/helm-charts/releases/download/statuz-0.2.7/statuz-0.2.7.tgz
+    version: 0.2.7
+  - apiVersion: v2
+    appVersion: 1.2.1
     created: "2023-10-28T18:39:37.889255413Z"
     description: A Helm chart for Kubernetes
     digest: 765569fbc0517cd8dd532a858b0d1189a874df1793123cebae486230425a9884
@@ -172,4 +182,4 @@ entries:
     urls:
     - https://github.com/statuzproj/helm-charts/releases/download/test-0.1.1/test-0.1.1.tgz
     version: 0.1.1
-generated: "2023-10-28T18:39:37.889376015Z"
+generated: "2023-10-28T18:42:19.652117964Z"
