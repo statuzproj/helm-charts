@@ -7,6 +7,27 @@ prometheus:
       enabled: false
     alertmanager:
       enabled: false
+    serverFiles:
+      prometheus.yml:
+        scrape_configs:
+          - job_name: genie
+            honor_timestamps: true
+            scrape_interval: 15s
+            scrape_timeout: 10s
+            metrics_path: /metrics
+            scheme: http
+            static_configs:
+              - targets:
+                  - genie:8080
+          - job_name: watcher
+            honor_timestamps: true
+            scrape_interval: 15s
+            scrape_timeout: 10s
+            metrics_path: /metrics
+            scheme: http
+            static_configs:
+              - targets:
+                  - watcher:8081
 
 endpoints:
   - name: google_bd
