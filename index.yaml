@@ -3,6 +3,20 @@ entries:
   statuz:
   - apiVersion: v2
     appVersion: 1.2.2
+    created: "2023-10-30T06:54:24.759025436Z"
+    dependencies:
+    - name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 25.4.0
+    description: A Helm chart for Kubernetes
+    digest: 6fec1edb4bf849912ce244b0a428eeb6b72c6aede39a1590b0df5d51b1aed3b6
+    name: statuz
+    type: application
+    urls:
+    - https://github.com/statuzproj/helm-charts/releases/download/statuz-0.2.15/statuz-0.2.15.tgz
+    version: 0.2.15
+  - apiVersion: v2
+    appVersion: 1.2.2
     created: "2023-10-30T06:46:41.606124968Z"
     dependencies:
     - name: prometheus
@@ -239,4 +253,4 @@ entries:
     urls:
     - https://statuzproj.github.io/helm-charts/statuz-0.1.1.tgz
     version: 0.1.1
-generated: "2023-10-30T06:46:41.60627097Z"
+generated: "2023-10-30T06:54:24.759188935Z"
