@@ -1,3 +1,13 @@
+prometheus:
+  prometheus-pushgateway:
+    enabled: false
+    prometheus-node-exporter:
+      enabled: false
+    kube-state-metrics:
+      enabled: false
+    alertmanager:
+      enabled: false
+
 endpoints:
   - name: google_bd
     target:
